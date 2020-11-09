@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <style>
+        section{
+            min-height: 420px;
+        }
+        .navbar {
+    transition: all 0.4s;
+    height: 60px;
+}
+    .portfolio .card{
+        opacity: 0;
+        transform: translate(0, -40px);
+        transition: 0.5s;
+    }
+
+    .portfolio .card.show{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+.navbar .nav-link {
+    color: #fff;
+    line-height: 46px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #fff;
+    
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+
+    .jumbotron {
+        margin-top: 4px;
+        overflow: hidden;
+    }
+
+    .space {
+        margin-bottom: 8px;
+    }
+}   
+
+    
+    .jumbotron h1, .jumbotron p{
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+        color: white;
+    }
+
+    .bg-cover{
+        background: url('img/img3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+
+    .feature{
+        font-weight: 1000;
+    }
+
+    .feature:hover{
+        box-shadow: 5px 10px #888888;
+        transition: 1s;
+    }
+
+    .pKiri, .pKanan{
+        opacity: 0;
+        transform: translate(-50px,0);
+        transition: 1s;
+    }
+
+    .pKanan{
+        transform: translate(50px,0);
+    }
+    
+    .pKiri.pShow, .pKanan.pShow{
+        opacity: 1;
+        transform: translate(0,0) ;
+    }
+    
+
+        
+    </style>
+
+    <title>Ramadhany Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-0 px-3">
+            <div class="container"><a href="#home" class="page-scroll navbar-brand text-uppercase font-weight-bold">Dhanyrpebs</a>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="#home" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="#about" class="page-scroll nav-link text-uppercase font-weight-bold">About</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link page-scroll text-uppercase font-weight-bold">Portfolio</a></li>
+                        <li class="nav-item"><a href="#contact" class="page-scroll nav-link text-uppercase font-weight-bold">Contact</a></li>
+            
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="jumbotron jumbotron-fluid bg-cover">
+            <div class="container text-center">
+            <img src="img/profile.png" width="25%" class="img-thumbnail rounded-circle">
+              <h1 class="display-4">Ramadhany</h1>
+              <p class="lead">Mahasiswa | Web Programmer | Software Engineer</p>
+            </div>
+          </div>
+    </section>
+      
+      <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="     col text-center">
+                    <h2>About</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-5 pKiri">
+                    <h2>Hi There !</h2>
+                    <p class="pKiri"> My name is ramadhany pramestha eka budi sari, you can call me Dhany at this time I am a student at the Pasuruan Merdeka University. I am a web developer and software engineer who likes to create small projects to fill my spare time</p>
+                    <h2>My Skill !</h2>
+                    HTML
+                    <div class="progress" style="height: 20px">
+                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                    </div>
+                    CSS
+                    <div class="progress" style="height: 20px">
+                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                    PHP 
+                    <div class="progress" style="height: 20px">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                    
+
+                </div>
+                <div class="col-md-5 text-center">
+                    <p class="pKanan">
+                        <img src="img/vector.png" width="300">
+                    </p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="whatido" class="whatido bg-light">
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col text-center">
+                        <h2><br>Whats I Do</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-3 text-center">
+                        <div class="card feature space">
+                            <div class="card-body">
+                              <img class="mt-3 mb-5" src="img/webdev.png" width="120" alt="">
+                              <div class="card-title">Web Developer</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <div class="card feature space">
+                            <div class="card-body">
+                              <img class="mt-3 mb-5" src="img/softeng.png" width="120" alt="">
+                              <div class="card-title">Software Engineer</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <div class="card feature space">
+                            <div class="card-body">
+                              <img class="mt-3 mb-5" src="img/gamer.png" width="120" alt="">
+                              <div class="card-title">Gamers</div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="row pt-4">
+              <div class="col text-center">
+                  <h2>Portfolio</h2>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md">
+                  <div class="card">
+                      <img src="img/img1.jpg" class="card-img-top" alt="...">
+                  </div>
+              </div>
+              <div class="col-md">
+                  <div class="card">
+                      <img src="img/img2.jpg" class="card-img-top" alt="...">
+                  </div>
+              </div>
+              <div class="col-md">
+                  <div class="card">
+                      <img src="img/img3.jpg" class="card-img-top" alt="...">
+                  </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md">
+                  <div class="card">
+                      <img src="img/img1.jpg" class="card-img-top" alt="...">
+                      
+                  </div>
+              </div>
+              <div class="col-md">
+                  <div class="card">
+                      <img src="img/img2.jpg" class="card-img-top" alt="...">
+                      
+                  </div>
+              </div>
+              <div class="col-md">
+                  <div class="card">
+                      <img src="img/img3.jpg" class="card-img-top" alt="...">
+                      
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md">
+                  <div class="card">
+                      <img src="img/img1.jpg" class="card-img-top" alt="...">
+                     
+                  </div>
+              </div>
+              <div class="col-md">
+                  <div class="card">
+                      <img src="img/img2.jpg" class="card-img-top" alt="...">
+                      
+                  </div>
+              </div>
+              <div class="col-md">
+                  <div class="card">
+                      <img src="img/img3.jpg" class="card-img-top" alt="...">
+                      
+                  </div>
+              </div>
+            </div>
+        </div>  
+    </section>
+    <section class="contact mt-4 mb-4 bg-light" id="contact" >
+        <div class="container">
+            <div class="row">
+                <div class="mt-3 col text-center">
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 text-center">
+                    <div class="card text-white bg-primary mb-3">
+                        <div class="card-body">
+                          <h5 class="card-title">Contact Me</h5>
+                          <p class="card-text">Feel free to reach me ! </p>
+                        </div>
+                      </div>
+                      <ul class="list-group">
+                        <li class="list-group-item"><h1>Location</h1></li>
+                        <li class="list-group-item">Office</li>
+                        <li class="list-group-item">Jl. Lumbang No27 Pasuruan</li>
+                        <li class="list-group-item">West Java, Pasuruan</li>
+                      </ul>
+                </div>
+            
+            
+                <div class="col-lg-6">
+                    <form>
+                        <div class="form-group">
+                          <label for="nama">Nama</label>
+                          <input type="text" class="form-control" id="nama">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+
+                        </div>
+                        <textarea name="pesan" id="pesan" class="form-control"></textarea><br>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary">Kirim Pesan!</button>
+                          </div>
+                        
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+        <div class="container pt-3">
+            <div class="row text-center">
+                <div class="col">
+                    <p>Copyright 2020</p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+      
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+            }
+        });
+        });
+
+        //Parallax
+
+        //About
+        $(window).on('load', function(){
+            $('.pKiri').addClass('pShow');
+            $('.pKanan').addClass('pShow');
+        });
+
+
+        $(window).scroll(function(){
+            var wScroll = $(this).scrollTop();
+
+            //Jumbotron
+            $('.jumbotron img').css({
+                'transform' : 'translate(0px, '+ wScroll/3 +'%)'
+            });
+
+            $('.jumbotron h1').css({
+                'transform' : 'translate(0px, '+ wScroll/2 +'%)'
+            });
+
+            $('.jumbotron p').css({
+                'transform' : 'translate(0px, '+ wScroll/1.2 +'%)'
+            })
+
+            //Portfolio
+            if(wScroll > $('.portfolio').offset().top - 150){
+
+                $('.portfolio .card').each(function(i){
+                    setTimeout(function(){
+                        $('.portfolio .card').eq(i).addClass('show');
+                    }, 300 * (i+1));
+                });
+
+            }
+            
+        });
+
+        //Smooth Scrolling
+        //Event Saat Klik Link
+        
+        // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top - 50
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
+
+    </script>
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
